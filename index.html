@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Welcome</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="css/jquery.mobile.css" />
+    <link type="text/css" rel="stylesheet" href="css/index.css" />
+    <link type="text/css" rel="stylesheet" href="css/media_queris.css" />
+    <script type="text/javascript" src="cordova.js"></script>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile.min.js"></script>
+</head>
+
+<body>
+    <div class="page" data-role="page" id="home" data-title="Home">
+        <header data-role="header" data-theme="b">
+            <a href="JavaScript:void(0);" onclick="exitApplication();" data-icon="back" data-rel="back" data-direction="reverse">Zatvoriť</a>
+            <h1>eHealth</h1>
+        </header>
+        <div data-role="content" class="content" data-theme="c">
+            <div class="index-title-box">
+                <table>
+                    <tr>
+                        <td class="title"><h2><span>Najlepšia</span><br /> pomoc, <br />keď máte diabetes</h2></td>
+                        <td class="img"><img src="img/img-lupa.png" alt="eHealth" /></td>
+                    </tr>
+                </table>
+            </div>
+            <ul class="listview" data-role="listview" data-inset="true" data-corners="false"></ul>
+        </div>
+    </div>
+
+    <div class="page" data-role="page" id="articles" data-title="Čo je to diabetes">
+        <header data-role="header" data-theme="b">
+            <a href="#index" data-icon="back" data-rel="back" data-direction="reverse">Späť</a>
+            <h1>eHealth</h1>
+        </header>
+        <div data-role="content" class="content" data-theme="c">
+            <h2>Čo je to diabetes</h2>
+            <ul class="listview" data-role="listview" data-inset="true" data-corners="false"></ul>
+        </div>
+    </div>
+
+    <div class="page" data-role="page" id="article" data-title="">
+        <header data-role="header" data-theme="b">
+            <a href="index.html#articles" data-icon="back" data-rel="back" data-direction="reverse">Späť</a>
+            <h1>eHealth</h1>
+        </header>
+        <div data-role="content" class="content" data-theme="c">
+            <h2></h2>
+            <article></article>
+        </div>
+    </div>
+
+    <div class="page" data-role="page" id="telemedicine" data-title="Telemedicina pre diabetikov">
+        <header data-role="header" data-theme="b">
+            <a href="index.html" data-icon="back" data-rel="back" data-direction="reverse">Späť</a>
+            <h1>eHealth</h1>
+        </header>
+        <div data-role="content" class="content" data-theme="c">
+            <h2>Telemedicína pre diabetikov <span class="slides"></span></h2>
+            <div class="animation">
+                <div class="animation-box">
+                    <div class="animation-picture">
+                        <table cellspacing="0" cellpadding="0" border="0">
+                            <tr><td><img src="" alt="" /></td></tr>
+                        </table>
+                    </div>
+                    <div class="animation-text">
+                        <table cellspacing="0" cellpadding="0" border="0">
+                            <tr><td>&nbsp;</td></tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="breaker"></div>
+                <div class="progress-bar">
+                    <div class="progress-line"></div>
+                    <div class="progress-content"></div>
+                </div>
+                <div class="breaker"></div>
+                <div class="animation-button-group" data-role="controlgroup" data-type="horizontal">
+                    <a href="JavaScript:void(0);" onclick="animationPrevStep()" class="animation-button-back ui-disabled" data-theme="b" data-role="button" data-icon="arrow-l" data-iconpos="left">Späť</a>
+                    <a href="JavaScript:void(0);" onclick="animationPause()" class="animation-button-pause" data-theme="b" data-role="button" data-icon="alert" data-iconpos="left">Stop</a>
+                    <a href="JavaScript:void(0);" onclick="animationContinue()" class="animation-button-continue" data-theme="b" data-role="button" data-icon="arrow-r" data-iconpos="left">Play</a>
+                    <a href="JavaScript:void(0);" onclick="animationNextStep()" class="animation-button-next" data-theme="b" data-role="button" data-icon="arrow-r" data-iconpos="right">Ďalej</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page" data-role="page" id="devices" data-title="Čo je to diabetes">
+        <header data-role="header" data-theme="b">
+            <a href="index.html" data-icon="back" data-rel="back" data-direction="reverse">Späť</a>
+            <h1>eHealth</h1>
+        </header>
+        <div data-role="content" class="content" data-theme="c">
+            <h2>Prístroje</h2>
+            <ul class="listview" data-role="listview" data-inset="true" data-corners="false"></ul>
+        </div>
+    </div>
+
+    <div class="page" data-role="page" id="device" data-title="">
+        <header data-role="header" data-theme="b">
+            <a href="index.html#devices" data-icon="back" data-rel="back" data-direction="reverse">Späť</a>
+            <h1>eHealth</h1>
+        </header>
+        <div data-role="content" class="content" data-theme="c">
+            <h2></h2>
+            <img src="" alt="" class="device" />
+            <ul class="listview" data-role="listview" data-inset="true" data-corners="false"></ul>
+        </div>
+    </div>
+
+    <div class="page" data-role="page" id="information" data-title="">
+        <header data-role="header" data-theme="b">
+            <a href="index.html#divace" data-icon="back" data-rel="back" data-direction="reverse">Späť</a>
+            <h1>eHealth</h1>
+        </header>
+        <div data-role="content" class="content" data-theme="c">
+            <h2>Informácie o produkte <span></span></h2>
+            <div></div>
+        </div>
+    </div>
+
+    <div class="page" data-role="page" id="using" data-title="">
+        <header data-role="header" data-theme="b">
+            <a href="index.html#divace" data-icon="back" data-rel="back" data-direction="reverse">Späť</a>
+            <h1>eHealth</h1>
+        </header>
+        <div data-role="content" class="content" data-theme="c">
+            <h2>Používanie prístroja <span class="name"></span> <span class="slides"></span></h2>
+            <div class="animation">
+                <div class="animation-box">
+                    <div class="animation-picture">
+                        <table cellspacing="0" cellpadding="0" border="0">
+                            <tr><td><img src="" alt="" /></td></tr>
+                        </table>
+                    </div>
+                    <div class="animation-text">
+                        <table cellspacing="0" cellpadding="0" border="0">
+                            <tr><td>&nbsp;</td></tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="breaker"></div>
+                <div class="progress-bar">
+                    <div class="progress-line"></div>
+                    <div class="progress-content"></div>
+                </div>
+                <div class="breaker"></div>
+                <div class="animation-button-group" data-role="controlgroup" data-type="horizontal">
+                    <a href="JavaScript:void(0);" onclick="animationPrevStep()" class="animation-button-back ui-disabled" data-theme="b" data-role="button" data-icon="arrow-l" data-iconpos="left">Späť</a>
+                    <a href="JavaScript:void(0);" onclick="animationPause()" class="animation-button-pause" data-theme="b" data-role="button" data-icon="alert" data-iconpos="left">Stop</a>
+                    <a href="JavaScript:void(0);" onclick="animationContinue()" class="animation-button-continue" data-theme="b" data-role="button" data-icon="arrow-r" data-iconpos="left">Play</a>
+                    <a href="JavaScript:void(0);" onclick="animationNextStep()" class="animation-button-next" data-theme="b" data-role="button" data-icon="arrow-r" data-iconpos="right">Ďalej</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page" data-role="page" id="accessories" data-title="">
+        <header data-role="header" data-theme="b">
+            <a href="index.html#divace" data-icon="back" data-rel="back" data-direction="reverse">Späť</a>
+            <h1>eHealth</h1>
+        </header>
+        <div data-role="content" class="content" data-theme="c">
+            <h2>Doplnky k prístroju <span></span></h2>
+        </div>
+    </div>
+
+    <div class="page" data-role="page" id="chemists" data-title="">
+        <header data-role="header" data-theme="b">
+            <a href="#index" data-icon="back" data-rel="back" data-direction="reverse">Späť</a>
+            <h1>eHealth</h1>
+        </header>
+        <div data-role="content" class="content" data-theme="c">
+            <h2>Mapa lekárni</h2>
+            <div class="map-box">
+                <select id="selectBoxCities" onchange="changeSelectBoxCities(this)" data-theme="b" data-placeholder="false" data-corners="false"></select>
+                <div id="no-internet-conection">Ak chcete zobrazit mapu lekárni, vaše zariadenie musíte pripojiť k internetu.</div>
+                <div id="map-canvas" class="ui-bar-c ui-shadow" style="min-height:400px; width: 100%; display:none;"></div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+    <script type="text/javascript" src="js/animation.js"></script>
+    <script type="text/javascript">
+        app.initialize();
+    </script>
+    <div class="ui-loader-background"> </div>
+</body>
+</html>

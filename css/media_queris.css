@@ -1,0 +1,38 @@
+
+
+
+/* Device width less then 488px */
+body.device-width-480 div.animation-box {
+    min-height: 400px;
+}
+body.device-width-480 div.animation-picture,
+body.device-width-480 div.animation-picture img {
+    height: 265px;
+}
+body.device-width-480 div.animation-text {
+    height: 125px;
+    margin-top: 10px;
+}
+body.device-width-480 div.animation-text td {
+    height: 105px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* Device height less then 488px */
+body.device-height-480 div.animation-box {
+    min-height: 250px;
+}
+body.device-height-480 div.animation-picture,
+body.device-height-480 div.animation-picture img {
+    height: 160px;
+}
+body.device-height-480 div.animation-text {
+    height: 80px;
+    margin-top: 10px;
+}
+body.device-height-480 div.animation-text td {
+    height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

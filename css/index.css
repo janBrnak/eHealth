@@ -1,0 +1,256 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+article {
+    padding: 0 15px;
+    line-height: 22px;
+}
+
+article img {
+    max-width: 100%;
+}
+
+h2 {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 20px;
+    color: #5495b7;
+}
+h3 {
+    font-size: 18px;
+    color: #5495b7;
+    margin: 18px 0 10px 0;
+}
+h4 {
+    font-size: 16px;
+    color: #5495b7;
+    margin: 16px 0 8px 0;
+}
+
+table {
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;
+    line-height: normal;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+    border: none;
+    line-height: normal;
+}
+
+div.breaker {
+    clear: both;
+}
+
+div.page {
+    background: #ffffff;
+}
+
+div.page header {
+
+}
+
+div.page header h1.ui-title {
+    /*font-size: 18px;*/
+}
+
+div.content {
+    background: #ffffff;
+    padding: 15px 0;
+}
+
+/* Index */
+div.index-title-box {
+    padding: 10px 0;
+}
+
+div.index-title-box table {
+    padding: 0;
+    margin: 0;
+    border: none;
+    border-spacing: 0;
+    width: 100%;
+}
+
+div.index-title-box td {
+    width: 50%;
+}
+
+div.index-title-box td.title {
+    text-align: left;
+    vertical-align: middle;
+}
+
+div.index-title-box td.img {
+    text-align: right;
+    vertical-align: middle;
+}
+
+div.index-title-box h2 {
+    font-size: 28px;
+    padding-left: 15px;
+    color: #141313;
+}
+
+div.index-title-box h2 span {
+    color: #de0707;
+}
+
+div.index-title-box img {
+    width: 100%;
+    max-width: 150px;
+}
+
+/* Device using*/
+div#device div.content h2 {
+    text-align: center;
+}
+div#device div.content img.device {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 250px;
+}
+
+div.animation {
+    padding: 0 15px;
+}
+
+div.animation-box {
+    min-height: 350px;
+    background-color: #ffffff;
+    -moz-border-radius-topleft: 10px;
+    -webkit-border-top-left-radius: 10px;
+     border-top-left-radius: 10px;
+    -moz-border-radius-topright: 10px;
+    -webkit-border-top-right-radius: 10px;
+    border-top-right-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #044062;
+}
+
+div.animation-picture {
+    height: 300px;
+}
+
+div.animation-picture table,
+div.animation-picture td {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+div.animation-picture img {
+    max-width: 100%;
+    max-height: 100%;
+    -moz-border-radius-topleft: 10px;
+    -webkit-border-top-left-radius: 10px;
+     border-top-left-radius: 10px;
+    -moz-border-radius-topright: 10px;
+    -webkit-border-top-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+div.animation-text {
+    width: 100%;
+    height: 80px;
+    margin-top: 20px;
+    background-color: #c3dfe8;
+    position: relative;
+}
+
+div.animation-text table {
+    width: 100%;
+    height: 100%;
+}
+div.animation-text td {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 14px;
+    color: #044062;
+    padding: 15px 3%;
+    overflow: hidden;
+}
+
+div.progress-bar {
+    height: 5px;
+    background: #044062;
+    overflow: hidden;
+    position: relative;
+}
+
+div.progress-line {
+    height: 5px;
+    z-index: 1;
+    width: 0px;
+    position: absolute;
+    background: #ff0000;
+    left: 0px;
+    top: 0px;
+}
+div.progress-content {
+    z-index: 9;
+    position: relative;
+}
+
+div.animation-button-group {
+    width: 310px;
+    margin: 15px auto;
+}
+
+a.animation-button-next {
+    width: 100px;
+}
+
+a.animation-button-pause {
+    width: 100px;
+}
+
+a.animation-button-continue {
+    width: 100px;
+    display: none;
+}
+
+a.animation-button-back {
+    width: 100px;
+}
+
+.ui-loader-background {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    margin: 0;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    position: fixed;
+    z-index: 100;
+}
+
+.ui-loading .ui-loader-background {
+    display: block;
+}
+
+/* Chemists */
+div.map-box {
+    padding: 0 15px;
+}
+
+div#no-internet-conection {
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    display: none;
+    padding: 4px 0 12px 0;
+}
